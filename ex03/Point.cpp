@@ -18,24 +18,24 @@ Point::Point(const float x, const float y) : x(x), y(y) {}
 
 Point::Point(const Point& org)
 {
-	*this = org;
+    *this = org;
 }
 
 Point::~Point(void) {}
 
 Point&  Point::operator=(const Point& org)
 {
-	x = org.x;
-	y = org.y;
-	return (*this);
+    x = org.x;
+    y = org.y;
+    return (*this);
 }
 
 float Point::getx(void) const
 {
-	return (x.toFloat());
+    return (x.toFloat());
 }
 
 float Point::gety(void) const
 {
-	return (y.toFloat());
+    return (y.toFloat());
 }

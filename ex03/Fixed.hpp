@@ -15,7 +15,7 @@
 
 # include <iostream>
 
-class	Fixed
+class   Fixed
 {
     private:
         int                 fixed_point;

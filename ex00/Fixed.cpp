@@ -15,34 +15,34 @@
 
 Fixed::Fixed(void) : fixed_point(0)
 {
-	std::cout << "Default constructor called"
-			  << std::endl;
+    std::cout << "Default constructor called"
+              << std::endl;
 }
 
 Fixed::Fixed(const Fixed& org)
 {
-	std::cout << "Copy constructor called"
-			  << std::endl;
-	*this = org;
+    std::cout << "Copy constructor called"
+              << std::endl;
+    *this = org;
 }
 
-Fixed&	Fixed::operator=(const Fixed &org)
+Fixed&  Fixed::operator=(const Fixed &org)
 {
     std::cout << "copy assignment operator called\n";
-	if (this != &org)
+    if (this != &org)
         this->fixed_point = org.getRawBits();
     return (*this);
 }
 
 Fixed::~Fixed(void)
 {
-	std::cout << "Destructor called"
-			  << std::endl;
+    std::cout << "Destructor called"
+              << std::endl;
 }
 
-int		Fixed::getRawBits(void) const
+int     Fixed::getRawBits(void) const
 {
-	std::cout << "getRawBits member function called"
-			  << std::endl;
-	return (fixed_point);
+    std::cout << "getRawBits member function called"
+              << std::endl;
+    return (fixed_point);
 }

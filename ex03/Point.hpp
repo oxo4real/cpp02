@@ -17,17 +17,17 @@
 
 class   Point
 {
-	private:
-	    Fixed   x;
-		Fixed   y;
-	public:
-	    Point(void);
-		Point(const float x, const float y);
-		Point(const Point& org);
-		~Point(void);
-		Point&  operator=(const Point& org);
-		float getx(void) const;
-		float gety(void) const;
+    private:
+        Fixed   x;
+        Fixed   y;
+    public:
+        Point(void);
+        Point(const float x, const float y);
+        Point(const Point& org);
+        ~Point(void);
+        Point&  operator=(const Point& org);
+        float getx(void) const;
+        float gety(void) const;
 };
 
 #endif

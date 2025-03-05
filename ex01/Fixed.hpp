@@ -15,22 +15,22 @@
 
 # include <iostream>
 
-class	Fixed
+class   Fixed
 {
-	private:
-		int					fixed_point;
-		static const int	frac_bits = 8;
-	public:
-		Fixed(void);
-		Fixed(const int i);
-		Fixed(const float f);
-		Fixed(const Fixed& org);
-		~Fixed();
-		int		getRawBits(void) const;
-		void	setRawBits(int const raw);
-		float	toFloat(void) const;
-		int		toInt(void) const;
-		Fixed& operator=(const Fixed& org);
+    private:
+        int                 fixed_point;
+        static const int    frac_bits = 8;
+    public:
+        Fixed(void);
+        Fixed(const int i);
+        Fixed(const float f);
+        Fixed(const Fixed& org);
+        ~Fixed();
+        int     getRawBits(void) const;
+        void    setRawBits(int const raw);
+        float   toFloat(void) const;
+        int     toInt(void) const;
+        Fixed& operator=(const Fixed& org);
 };
 
 std::ostream& operator<<(std::ostream& file_stream, const Fixed& fixed);
