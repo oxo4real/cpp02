@@ -6,7 +6,7 @@
 /*   By: aaghzal <aaghzal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 04:31:20 by aaghzal           #+#    #+#             */
-/*   Updated: 2025/03/05 06:45:50 by aaghzal          ###   ########.fr       */
+/*   Updated: 2025/03/05 22:07:16 by aaghzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int     main( void ) {
     Point b(4, 0);
     Point c(2, 4);
 
-    Point p(1, 2);
+    Point p(2, 1);
 
     if (bsp(a, b ,c ,p))
         std::cout << "In" << std::endl;
